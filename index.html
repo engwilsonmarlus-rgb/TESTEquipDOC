@@ -376,7 +376,7 @@ const DEFAULT_EQUIPMENTS = [
   { name: 'TRANSFORMADOR DE CORRENTE', parts: ['AT','AT A','AT B','AT C','FICHA','MI A1','MI A2','MI B1','MI B2','MI C1','MI C2','PANO','PLACA','PLACA A','PLACA B','PLACA C','NO A','NO B','NO C','PLACA COD','PLACA DE RELAÇÃO','PNL AB','PNL AT','PNL ED','PNL VD','PNL','SEC A','SEC B','SEC C','SUSPIRO 1','SUSPIRO 2'] },
   { name: 'PARA-RAIO', parts: ['AT A','AT B','AT C','FASE A','FASE B','FASE C','FICHA','MI A','MI B','MI C','PANO','PLACA A','PLACA B','PLACA C','PLACA COD'] },
   { name: 'TRANSFORMADOR POTENCIAL', parts: ['AT A','AT B','AT C','FICHA','MI A1','MI B1','MI C1','NO A','NO B','NO C','PANO','PLACA A','PLACA B','PLACA C','PLACA COD','PLACA DE RELAÇÕES','PNL AB','PNL AT','PNL ED','PNL VD','PNL','SEC A','SEC B','SEC C','SUSPIRO 1','SUSPIRO 2'] },
-  { name: 'CHAVE TRIPOLAR', parts: ['PANO AB','PANO FE','PLACA','PLACA COD','PNL AT','PNL','MI A1','MI A2','MI B1','MI B2','MI C1','MI C2','AT A','AT B','AT C','FICHA'] },
+  { name: 'CHAVE TRIPOLAR', parts: ['PANO AB','PANO FE','PLACA','PLACA COD','PNL AT','PNL','MI A1','MI A2','MI B1','MI B2','MI C1','MI C2','AT A','AT B','AT C','FICHA','L TERRA AB','L TERRA FE','PLACA TERRA'] },
   { name: 'CHECKLIST DO CARRO', parts: ['FRENTE','TRASEIRA','LADO ESQUERDO','LADO DIREITO','PAINEL LIGADO'] },
   { name: 'BANCO CAPACITOR', groups: [
     { name: 'CELULAS', parts: [
@@ -494,7 +494,7 @@ async function persistEquipments(){
 }
 
 // versão da lista padrão — incremente sempre que mudar DEFAULT_EQUIPMENTS
-const DEFAULTS_VERSION = 19;
+const DEFAULTS_VERSION = 20;
 
 // Converte definição padrão em objeto de equipamento
 function defToEq(d){
